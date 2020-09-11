@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PostMaster</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="menu">
+            <p class="navitem" id="logo">PostMaster</p>
+            <a class="navitem" href="#">Home</a>
+            <a class="navitem" href="#">Services</a>
+            <a class="navitem" href="#">About us</a>
+            <a class="navitem" href="#">Contact us</a>
+        </div>
+    </nav>
+    <div id="aside1"></div>
+    <div class="container">
+        <h1>Welcome to PostMaster</h1>
+        <form action="none" id="inputArea">
+            <div class="urlcls">
+                <legend for="url">URL</legend>
+                <div class="urlinput">
+                    <input class="inputTxt" type="text" id="url" name="url" placeholder="Enter URL here">
+                </div>
+            </div>
+
+            <div class="request radio-block">
+                <legend class="">Request Type:</legend>
+                <div class="btn-block">
+                    <div class="request radio-btn">
+                        <input type="radio" name="requestType" id="GET" value="GET" checked>
+                        <label for="GET">GET</label>
+                    </div>
+                    <div class="request radio-btn">
+                        <input type="radio" name="requestType" id="POST" value="POST">
+                        <label for="POST">POST</label>
+                    </div>
+                </div>
+            </div>
+            <br>
+
+            <div class="content radio-block" id="contentTypeID">
+                <legend class="legend">Content Type:</legend>
+                <div class="btn-block">
+                    <div class="content radio-btn">
+                        <input type="radio" name="contentType" id="JSON" value="JSON" checked>
+                        <label for="JSON">JSON</label>
+                    </div>
+                    <div class="content radio-btn">
+                        <input type="radio" name="contentType" id="CustPara" value="CustomParameters">
+                        <label for="POST">Custom Parameters</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="jsonTextArea" id="jsonBlock">
+                <legend>Enter Request JSON:</legend>
+                <div class="jsonText">
+                    <textarea name="josnText" id="jsonText" cols="87" rows="5"
+                        placeholder="Enter JSON request here.."></textarea>
+                </div>
+
+            </div>
+            <div class="custPara" id="custParaArea">
+
+                <div class="custText" id="CustParaID">
+                    <legend>Parameter 1:</legend>
+                    <input class="customParaText ParameterKey" type="text" name="key" id="key1" placeholder="key 1">
+                    <input class="customParaText ParameterValue" type="text" name="value" id="value1"
+                        placeholder="value 1">
+                    <input type="button" id="custParaBtn" class="custParaBtn btn" value="+">
+                </div>
+            </div>
+            <div class="btncontainer">
+                <div id="submit">
+                    <input type="button" id="submitButton" class="submitBtn btn" value="Submit">
+                </div>
+                <div id="rset">
+                    <input type="reset" value="Reset" class="btn resetBtn" id="resetBtn">
+                </div>
+            </div>
+            <div class="responseTextClass" id="responseTextBlock">
+                <legend>Response:</legend>
+                <div class="response">
+                    <textarea name="response" id="responseText" cols="87" rows="25"
+                        placeholder="Please wait fetching..."></textarea>
+                </div>
+
+            </div>
+        </form>
+    </div>
+    <div id="aside2"></div>
+
+</body>
+<script src="index.js"></script>
+
+</html>

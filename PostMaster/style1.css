@@ -1,0 +1,181 @@
+body{
+    display: grid;
+    grid-template-columns: 15% 70% 15%;
+    grid-gap: 1rem;
+    width: 95vw;
+    background-color: rgb(127, 162, 228);
+}
+input[type="text"]{
+    border: 1px solid rgb(18, 60, 201);
+}
+#navbar{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    /* border: 2px solid black; */
+    background-color: rgb(0, 99, 165);
+    height: 3rem;
+    border-radius: 1rem;
+    text-align: left;
+    position: relative;
+    
+}
+#menu{
+    position: absolute;
+    top: 0.8rem;
+    left: 1rem;
+}
+
+.navitem{
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 1rem;
+    /* border: 1px solid black; */
+    margin: 1rem;
+    padding: .3rem ;
+}
+#logo{
+    display: inline;
+    color: rgb(224, 64, 64);
+    font-size: 1.5rem;
+    font-family: fantasy;
+    cursor: none;
+}
+#aside1{
+    /* border: 2px solid black; */
+}
+h1{
+    box-sizing: border-box;
+    margin: 0rem 1rem;
+    padding: .3rem ;
+}
+.container{
+    /* border: 2px solid black;  */
+}
+.radio-btn{
+    margin-left: 2rem;
+    /* display: inline-block; */
+    width: 10rem;
+}
+.radio-block{
+    /* border: 1px solid black; */
+    display: flex;
+}
+legend{
+    /* display: inline; */
+    box-sizing: border-box;
+    margin: 0rem 1rem;
+    padding: .3rem ;
+    width: 10rem;
+    align-self: center;
+    /* border: 1px solid black; */
+}
+
+#aside2{
+    /* border: 2px solid black; */
+}
+.urlcls{
+    display: flex;
+    width: 100%;
+  
+}
+.urlcls input[type=text]{
+    box-sizing: border-box;
+    border: 1px solid rgb(18, 60, 201);
+    margin: 0rem 1rem;
+    padding: .3rem ;
+    width: 100%;    
+    border-radius: 5px;
+}
+.urlinput{
+    
+    box-sizing: border-box;
+    margin: 1rem 1rem;
+    padding: .3rem ;
+    width: 90%;
+}
+.jsonTextArea{
+    display: flex;
+        
+}
+#jsonText{
+    border: 1px solid rgb(18, 60, 201);
+    box-sizing: border-box;
+    margin: 1rem 1rem;
+    padding: .3rem ;
+    width: 97%;
+    
+}
+.custPara{
+    /* border: 1px solid black; */
+    display: flex;
+    /* border: 1px solid rgb(18, 60, 201); */
+   
+    
+}
+.custText{
+   display: flex;
+   /* border: 1px solid rgb(18, 60, 201); */
+   /* margin: .5rem 1rem */
+    
+}
+.custParaBtn:active{
+    background-color: rgb(36, 75, 192);
+    box-shadow: 0 0 0 white;
+    margin: 6px 10px 2px 12px;
+    
+}
+
+.btn{
+    color: white;
+    background-color: rgb(18, 60, 201);
+    box-shadow:2px 1px 2px rgb(2, 2, 109);
+    margin: 4px 10px 4px 10px;
+    border: 1px solid rgb(18, 60, 201);
+    padding: .3rem 1rem ;
+    border-radius: 2px;
+    cursor: pointer;
+   
+}
+.btncontainer{
+    display: flex;
+    /* flex-direction: column; */
+}
+#submit{
+    /* border: 1px solid black; */
+    display: inline-block;
+    width: 6rem;
+}
+#rset{
+    /* border: 1px solid black; */
+    display: inline-block;
+    width: 6rem;
+}
+.submitBtn:active {
+    background-color: rgb(36, 75, 192);
+    box-shadow: 0 0 0 white;
+    margin: 6px 10px 2px 12px;
+}
+.resetBtn:active {
+    background-color: rgb(36, 75, 192);
+    box-shadow: 0 0 0 white;
+    margin: 6px 10px 2px 12px;
+}
+.customParaText{ 
+    box-sizing: border-box;
+    align-self: center;
+    width: 50%;
+}
+
+
+.responseTextClass{
+    display: flex;
+}
+#responseText{
+    box-sizing: border-box;
+    margin: 1rem 1rem;
+    padding: .3rem ;
+    width: 97%;
+    size: auto;
+    color: blue;
+}
