@@ -1,0 +1,1 @@
+console.log("this is for NMP tutorial, and this is greate");

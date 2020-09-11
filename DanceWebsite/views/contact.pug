@@ -1,0 +1,18 @@
+extends ./layout.pug
+block style
+    style
+        include ../static/style.css
+        include ../static/styleContact.css
+    
+block addbody
+    div.formContainer
+        h2 Contact us
+        form(action="/form_submit", method="post", name="userForm")
+            input(type="text", name="name", placeholder="Name")
+            input(type="text", name="age", placeholder="Age")
+            input(type="text", name="phone", placeholder="Phone")
+            input(type="text", name="email", placeholder="E-Mail")
+            input(type="text", name="message", placeholder="Enter your message")
+            button(type="submit")
+                |Submit
+            

@@ -1,0 +1,55 @@
+doctype html
+html
+    head
+        title This is title
+        style
+            include ../static/style.css
+    body
+        nav#navbar
+            div.logo
+                img(src="/images/logo.png")
+                |UDA
+            ul
+                li #[a(href="/") Home]
+                li #[a(href="/") Services]
+                li #[a(href="/") Classes Info]
+                li #[a(href="/") About us]
+                li #[a(href="/") Contact us]
+        section#introSection
+         
+            h2 Welcome to Utsav Dance Academy
+            p Great dancers are not great because of their technique, 
+            p they are great because of their passion. 
+            p – Martha Graham
+        section#programms
+            div.card
+                div.card_logo
+                    img(src="/images/1.png")
+                div.content
+                    h4 Dance Classes
+                    p This is the content of the Dance Classes
+            div.card
+                div.card_logo
+                    img(src="/images/2.png")
+                div.content
+                    h4 Dance Classes
+                    p This is the content of the Dance Classes
+            div.card
+                div.card_logo
+                    img(src="/images/3.png")
+                div.content
+                    h4 Dance Classes
+                    p This is the content of the Dance Classes
+        section#sponcerSection
+            h2 Our Spouncers
+            div.sponsers
+                img(src="/images/logo1.png")
+                img(src="/images/logo2.png")
+                img(src="/images/logo3.png")
+                img(src="/images/logo4.png")
+            
+        section#footer
+            p Copyright &copy Utsav Dance Academy | All rights reserved
+        script
+            include ../static/index.js
+

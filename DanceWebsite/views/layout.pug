@@ -1,0 +1,25 @@
+//- layout.pug
+doctype html
+html
+  head
+    title This is title
+    block style
+        style
+            include ../static/style.css
+
+  body
+    block content
+        nav#navbar
+            div.logo
+                img(src="/images/logo.png")
+                |UDA
+            ul
+                li #[a(href="/") Home]
+                li #[a(href="/") Services]
+                li #[a(href="/") Classes Info]
+                li #[a(href="/") About us]
+                li #[a(href="/contact") Contact us]
+    block addbody
+    block foot
+        section#footer
+            p Copyright &copy Utsav Dance Academy | All rights reserved

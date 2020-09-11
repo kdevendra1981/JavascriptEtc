@@ -1,0 +1,27 @@
+.formContainer{
+    background-color: rgb(245, 172, 172);
+    border: 1px solid black;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    height: 80vh;
+   
+}
+.formContainer h2{
+    font-size: 2rem;
+}
+form{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+input{
+    width: 40vw;
+    padding: .5rem;
+    margin-bottom: 1rem;
+    outline: none;
+}
